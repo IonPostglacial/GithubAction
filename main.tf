@@ -1,6 +1,7 @@
 terraform {
-    backend "remote" {
+    backend "local" {
         organization = "ng-corp"
+        path = "terraform.tfstate"
         workspaces {
             name = "example-workspace"
         }
