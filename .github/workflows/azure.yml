@@ -3,6 +3,8 @@ on: [push]
 
 jobs:
   test:
+    permissions:
+      id-token: write
     runs-on: ubuntu-latest
     steps:
     - name: Azure login
