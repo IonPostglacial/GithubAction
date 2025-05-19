@@ -38,6 +38,7 @@ jobs:
           pwd
   build-ubuntu-22:
     runs-on: ubuntu-22.04
+    needs: build
     steps:
       - uses: actions/checkout@v4
       - run: echo "Job 2 on ubuntu 22.04"
