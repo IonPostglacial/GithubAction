@@ -1,9 +1,6 @@
 terraform {
     backend "local" {
         path = "terraform.tfstate"
-        workspaces {
-            name = "example-workspace"
-        }
     }
 }
 
